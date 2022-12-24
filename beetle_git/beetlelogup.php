@@ -35,7 +35,13 @@ $db=new dbFunction();
            $name=$_POST['yname'];
                         
         //$db->dbState();
-        $sql="INSERT INTO `member` (`email`, `pwd`, `yname`) VALUES ('$email', '$pwd', '$name');";
+        $sql="SELECT id FROM beetledb.member where email='$email'";
+        $chm=$db->dbQuery($sql);
+        $chmnum=$chm->num_rows;
+            if($chmnum==1){
+                echo "失敗";
+            }else{
+             $sql="INSERT INTO beetledb.member (`email`, `pwd`, `yname`) VALUES ('$email', '$pwd', '$name');";
         $chm=$db->dbQuery($sql);
         if($chm){
             echo "註冊成功";
@@ -43,10 +49,9 @@ $db=new dbFunction();
             exit;
         }else{
             echo "註冊失敗";
-        }
-        
-     
-        
+        }   
+            }
+
         }
         ?>
     </body>
