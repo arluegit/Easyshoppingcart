@@ -1,0 +1,65 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2022年12月8日, 下午12:57:32
+    Author     : user
+*/
+
+   
+            .container-fluid{background-color: lightsalmon;text-align: center;
+            }
+            
+            #d1{
+                display: flex;
+                align-items: center;
+                background-color: lightseagreen;  
+            }
+            #d1 ul{
+                list-style-type: none;
+                display: inline-flex;
+                margin: 0px;
+            }
+            #d1 a{
+                color: #f94144;
+                text-decoration: none; 
+            }
+            #d1 li{
+                padding: 0.8vw;
+            }
+            img{
+                float: left;
+                width: 10%;
+                border-radius: 10px;
+                border: 2px black solid;
+                margin-right: 10px;
+                   }
+            .myimage{
+                width: 20%;
+                height: auto;
+                padding: 8px;  
+                   }
+            
+            p{
+                font-size: 1.2rem;
+            }
+            
+            li{
+                list-style-type: none;
+            }
+            footer{
+               position: fixed;
+               left: 0px;
+               bottom: 0px;
+               background-color: lightgray;
+               color: grey;
+               width: 100%;
+               text-align: center;
+               padding: 8px;
+            }
+            #tab1{
+                border: 1px black solid;
+            }
+            
+
