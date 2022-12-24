@@ -20,7 +20,7 @@
 
     <style>
             img{
-                /*float: left;*/
+                
                 width: 20%;
                 border-radius: 25px;
                 border: 2px black solid;
